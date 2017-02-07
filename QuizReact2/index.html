@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>React Quiz 2</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <blockquote><a href="Quiz.html" id="Que"></a></blockquote>
+    <blockquote><a href="SignUp.html" id="Register"></a></blockquote>
+    
+    
+    <script src="react.js"></script>
+    <script src="react-dom.js"></script>
+    <script src="browser.min.js"></script>
+    
+    <script type="text/babel">
+            var Quiz = React.createClass({
+            render : function(){
+                return(
+                <div>
+                <div><h1></h1></div>
+                    <button className="button-primary">Start Quiz</button>
+                </div>
+                    
+                );
+                }
+            });
+            var createQuiz = React.createClass({
+            render : function(){
+                return(
+                <div>
+                <div><h1></h1></div>
+                    <button>Create Quiz</button>
+                </div>
+                    
+                );
+                }
+            });
+            ReactDOM.render(
+            <div>
+                <Quiz />
+                <createQuiz />
+            </div>,
+    document.getElementById("Que")
+    );
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>
